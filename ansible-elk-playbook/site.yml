@@ -12,5 +12,4 @@
   - { role: kibana }
   - { role: logstash }
   - { role: filebeat }
-  - { role: filebeat-logzio }
   - { role: metricbeat }
