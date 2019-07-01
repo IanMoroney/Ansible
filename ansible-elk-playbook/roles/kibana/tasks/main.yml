@@ -52,9 +52,9 @@
    state: restarted
 
 
-- name: Sleeping for 180 seconds
+- name: Sleeping for 120 seconds
   wait_for:
-    timeout: 180
+    timeout: 120
 
 - name: Setting Kibana Dark Mode
   uri:
