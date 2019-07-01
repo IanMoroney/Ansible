@@ -5,7 +5,7 @@
     user: vagrant
     state: present
     manage_dir: yes
-    key: "{{ lookup('file', '/home/{{ lookup('env', 'USER') }}/.ssh/id_rsa.pub') }}"
+    key: "{{ lookup('file', '/home/' + lookup('env', 'USER') + '/.ssh/id_rsa.pub') }}"
 
 - name: restart ssh
   service:
