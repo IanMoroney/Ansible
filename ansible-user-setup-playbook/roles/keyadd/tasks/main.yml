@@ -1,0 +1,13 @@
+---
+
+- name: Deploy SSH Key
+  authorized_key:
+    user: vagrant
+    state: present
+    manage_dir: yes
+    key: "{{ lookup('file', '/home/{{ lookup('env', 'USER') }}/.ssh/id_rsa.pub') }}"
+
+- name: restart ssh
+  service:
+    name: sshd
+    state: restarted
