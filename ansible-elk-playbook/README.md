@@ -2,6 +2,8 @@
  
 This playbook is for setting up version 5.x of the ELK Stack on a remote server. 
 
+Based on the ansible-elk-playbook repo by [Daniel Berman]
+
 ## Notes and requirements
 
  - The playbook was built and tested on Ubuntu 16.04 VMs, for ELK versions 5.x 
@@ -17,7 +19,6 @@ This playbook is for setting up version 5.x of the ELK Stack on a remote server.
  `ansible-playbook site.yml`
  
  The plays in the playbook will run on the target server, installing ELK and the specified beats shippers. 
- Based on the ansible-elk-playbook repo by [Daniel Berman]
  
 [site.yml]: https://github.com/IanMoroney/Ansible/blob/master/ansible-elk-playbook/site.yml
 
