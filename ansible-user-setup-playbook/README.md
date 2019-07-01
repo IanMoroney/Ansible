@@ -10,5 +10,6 @@ This playbook is for setting up your user for passwordless authentication to a r
 ## Instructions
  
  1. Have an existing public/private key pair generated.
- 2. Run this playbook with:
+ 2. Ensure your /etc/ansible/hosts matches the `hosts` entry in site.yml
+ 3. Run this playbook with:
  `ansible-playbook -K site.yml`
