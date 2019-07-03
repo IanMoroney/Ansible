@@ -50,6 +50,7 @@
   service:
    name: kibana
    state: restarted
+   enabled: yes
 
 
 - name: Sleeping for 120 seconds
